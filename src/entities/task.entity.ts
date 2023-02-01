@@ -14,7 +14,7 @@ export class Task {
   @Column({ length: 120 })
   description: string;
 
-  @Column()
+  @Column({ default: "todo" })
   status: "todo" | "done";
 
   @CreateDateColumn()
