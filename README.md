@@ -15,8 +15,7 @@ Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
 
 <strong>yarn dev</strong>
 
-//TROCAR!
-<p>A URL base da API é https://json-server-project-help-ts.herokuapp.com</p>
+<p>A URL base da API é https://to-do-list-seven-delta.vercel.app//p>
 
 
 <h2 align ='center'> Listando </h2>
