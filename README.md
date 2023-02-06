@@ -8,12 +8,18 @@ Esta é a API da aplicação To do list - um banco de dados pensado em auxiliar 
 </p>
 
 <p>
+Para configurar o servidor, primeiro faça um cópia do arquivo .env.example, preencha com os dados do seu usuário e renomeie para .env
+</p>
+
+<p>
 Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
 </p>
 
 <strong>yarn install</strong>
 
 <strong>yarn build</strong>
+
+<strong>yarn typeorm migration:run -d src/data-source.ts</strong>
 
 <strong>yarn dev</strong>
 
