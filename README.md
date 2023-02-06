@@ -20,7 +20,7 @@ Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
 <p>A URL base da API é https://to-do-list-seven-delta.vercel.app//p>
 
 
-<h2 align ='center'> Listando </h2>
+<h2 align ='center'> Listar tasks </h2>
 
 `GET /tasks - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -35,6 +35,8 @@ Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
   }
 ]
 ```
+
+<h2 align ='center'> Listar users </h2>
 
 `GET /users - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -148,6 +150,9 @@ Porém por padrão o status vem como "todo".
 ```
 
 *É possível fazer uma atualização tanto parcial, quanto total.
+
+
+<h2 align ='center'> Atualizar user </h2>
 
 `PATCH /users/id - (id do user a ser editado) FORMATO DA REQUISIÇÃO`
 
