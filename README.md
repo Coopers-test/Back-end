@@ -13,6 +13,8 @@ Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
 
 <strong>yarn install</strong>
 
+<strong>yarn build</strong>
+
 <strong>yarn dev</strong>
 
 <p>A URL base da API é https://to-do-list-seven-delta.vercel.app//p>
