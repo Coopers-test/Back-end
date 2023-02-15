@@ -8,18 +8,25 @@ Esta é a API da aplicação To do list - um banco de dados pensado em auxiliar 
 </p>
 
 <p>
+Para configurar o servidor, primeiro faça um cópia do arquivo .env.example, preencha com os dados do seu usuário e renomeie para .env
+</p>
+
+<p>
 Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
 </p>
 
 <strong>yarn install</strong>
 
+<strong>yarn build</strong>
+
+<strong>yarn typeorm migration:run -d src/data-source.ts</strong>
+
 <strong>yarn dev</strong>
 
-//TROCAR!
-<p>A URL base da API é https://json-server-project-help-ts.herokuapp.com</p>
+<p>A URL base da API é https://to-do-list-seven-delta.vercel.app//p>
 
 
-<h2 align ='center'> Listando </h2>
+<h2 align ='center'> Listar tasks </h2>
 
 `GET /tasks - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -34,6 +41,8 @@ Para rodar o servidor em sua máquina, basta dar os seguintes comandos:
   }
 ]
 ```
+
+<h2 align ='center'> Listar users </h2>
 
 `GET /users - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -147,6 +156,9 @@ Porém por padrão o status vem como "todo".
 ```
 
 *É possível fazer uma atualização tanto parcial, quanto total.
+
+
+<h2 align ='center'> Atualizar user </h2>
 
 `PATCH /users/id - (id do user a ser editado) FORMATO DA REQUISIÇÃO`
 
