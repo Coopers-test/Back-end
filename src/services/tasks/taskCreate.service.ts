@@ -13,14 +13,9 @@ const taskCreateService = async (
   userId?: string
 ) => {
   const taskRepository = AppDataSource.getRepository(Task);
-  //   const userRepository = AppDataSource.getRepository(User);
-
-  //   const owner = await userRepository.findOneBy({ id: userId });
-
-  //   if (!owner) throw new AppError("Logged in user doesn't exist (impossible)");
 
   const newTask = taskRepository.create(newTaskData);
-  //   newTask.user = owner;
+
   await taskRepository.save(newTask);
   return newTask;
 };
